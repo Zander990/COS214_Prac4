@@ -3,4 +3,5 @@
 *.exe
 taskforge
 .vscode/
-.idea/
+.idea/*:Zone.Identifier
+docs/html/
