@@ -1,0 +1,28 @@
+# Minimal Doxygen configuration for TaskForge.
+# Any option not set here keeps its Doxygen default.
+
+PROJECT_NAME           = "TaskForge"
+PROJECT_BRIEF          = "Hierarchical work processing - COS 214 Practical 4"
+
+INPUT                  = .
+FILE_PATTERNS          = *.cpp *.h *.hpp
+RECURSIVE              = YES
+EXCLUDE                = docs
+
+OUTPUT_DIRECTORY       = docs
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+
+# Class/collaboration graphs (needs graphviz, which the Dockerfile installs)
+HAVE_DOT               = YES
+UML_LOOK               = YES
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = YES
+CALL_GRAPH             = NO
+
+QUIET                  = NO
+WARN_IF_UNDOCUMENTED   = NO
